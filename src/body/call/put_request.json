@@ -1,0 +1,25 @@
+{
+  "extension": "100",
+  "employee": {
+    "href": "https://online.moysklad.ru/api/remap/1.1/entity/employee/88fc07ad-2c8d-11e6-8a84-bae500000050",
+    "type": "employee",
+    "mediaType": "application/json"
+  },
+  "endTime": "2017-01-01 00:00:05.000",
+  "recordUrl": [
+    "http://some_url.ru"
+  ],
+  "comment": "updated call comment",
+  "events": [
+    {
+      "eventType": "SHOW",
+      "extension": "101",
+      "sequence": 1,
+      "employee": {
+        "href": "https://online.moysklad.ru/api/remap/1.1/entity/employee/88fc07ad-2c8d-11e6-8a84-bae500000050",
+        "type": "employee",
+        "mediaType": "application/json"
+      }
+    }
+  ]
+}

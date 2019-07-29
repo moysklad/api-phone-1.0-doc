@@ -1,0 +1,13 @@
+{
+  "employees": [
+    {
+
+      "meta": {
+        "href": "https://online.moysklad.ru/api/remap/1.1/entity/employee/7bac6104-1c79-11e8-5bec-bccf0000002a",
+        "type": "employee",
+        "mediaType": "application/json"
+      },
+      "extention": "1234"
+    }
+  ]
+}
