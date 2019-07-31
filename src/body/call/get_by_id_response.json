@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "href": "https://online.moysklad.ru/api/phone/1.0/call/7944ef04-f831-11e5-7a69-971500188b19",
+    "type": "call",
+    "mediaType": "application/json"
+  },
+  "id": "89fc07ad-2c8d-11e6-8a84-bae500000051",
+  "externalId": "AkjhDlkJDlkjD09D",
+  "number": "+74959999999",
+  "counterparty": {
+    "href": "https://online.moysklad.ru/api/remap/1.1/entity/counterparty/88fc07ad-2c8d-11e6-8a84-bae500000050",
+    "type": "counterparty",
+    "mediaType": "application/json"
+  },
+  "counterpartyowner": {
+    "extention": "100",
+    "meta": {
+      "href": "https://online.moysklad.ru/api/remap/1.1/entity/employee/88fc07ac-2c8d-11e6-8a84-bae500000050",
+      "type": "employee",
+      "mediaType": "application/json"
+    }
+  },
+  "extension": "100",
+  "comment": "example comment",
+  "employee": {
+    "href": "https://online.moysklad.ru/api/remap/1.1/entity/employee/88fc07ac-2c8d-11e6-8a84-bae500000050",
+    "type": "employee",
+    "mediaType": "application/json"
+  },
+  "isIncoming": true,
+  "startTime": "2017-01-01 00:00:05.000",
+  "endTime": "2017-01-01 00:00:05.000",
+  "duration": 0,
+  "recordUrl": [
+    "http://some_url.ru"
+  ]
+}

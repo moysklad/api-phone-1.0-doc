@@ -1,0 +1,14 @@
+{
+  "endTime": "2017-01-01 00:01:05.000",
+  "recordUrl": [
+    "http://some_url.ru"
+  ],
+  "comment": "updated example comment",
+  "events": [
+    {
+      "eventType": "HIDE",
+      "extension": "101",
+      "sequence": 2
+    }
+  ]
+}

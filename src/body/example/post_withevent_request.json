@@ -1,0 +1,14 @@
+{
+  "externalId": "AkjhDlkJDlkjD09D",
+  "number": "+74959999999",
+  "extension": "101",
+  "isIncoming": true,
+  "startTime": "2017-01-01 00:00:05.000",
+  "events": [
+    {
+      "eventType": "SHOW",
+      "extension": "101",
+      "sequence": 1
+    }
+  ]
+}
