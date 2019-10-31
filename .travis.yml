@@ -8,6 +8,7 @@ branches:
   only:
   - master
 script:
+- docker build .
 - ./build.sh
 deploy:
   provider: script
