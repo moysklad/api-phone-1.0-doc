@@ -8,7 +8,7 @@ branches:
   only:
   - master
 script:
-- docker build .
+- docker build . --tag aglio
 - ./build.sh
 deploy:
   provider: script
