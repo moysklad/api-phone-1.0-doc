@@ -2,13 +2,13 @@
   "externalId": "AkjhDlkJDlkjD09D",
   "number": "+74959999999",
   "counterparty": {
-    "href": "https://api.moysklad.ru/api/remap/1.1/entity/counterparty/88fc07ad-2c8d-11e6-8a84-bae500000050",
+    "href": "https://api.moysklad.ru/api/remap/1.2/entity/counterparty/88fc07ad-2c8d-11e6-8a84-bae500000050",
     "type": "counterparty",
     "mediaType": "application/json"
   },
   "extension": "100",
   "employee": {
-    "href": "https://api.moysklad.ru/api/remap/1.1/entity/employee/88fc07ad-2c8d-11e6-8a84-bae500001324",
+    "href": "https://api.moysklad.ru/api/remap/1.2/entity/employee/88fc07ad-2c8d-11e6-8a84-bae500001324",
     "type": "employee",
     "mediaType": "application/json"
   },
@@ -26,7 +26,7 @@
       "extension": "101",
       "sequence": 1,
       "employee": {
-        "href": "https://api.moysklad.ru/api/remap/1.1/entity/employee/88fc07ad-2c8d-11e6-8a84-bae500001325",
+        "href": "https://api.moysklad.ru/api/remap/1.2/entity/employee/88fc07ad-2c8d-11e6-8a84-bae500001325",
         "type": "employee",
         "mediaType": "application/json"
       }
