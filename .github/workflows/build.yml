@@ -16,7 +16,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/MC-65688'
     steps:
       - uses: actions/checkout@v2
 
