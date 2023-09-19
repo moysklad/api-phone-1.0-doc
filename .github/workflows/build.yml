@@ -10,7 +10,6 @@ jobs:
 
       - name: Build
         run: |
-          docker build . --tag aglio
           ./build.sh
 
   deploy:
@@ -26,4 +25,5 @@ jobs:
           APP_PREFIX: api-phone
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
+          ./build.sh
           ls output
