@@ -1,0 +1,25 @@
+name: Deploy
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy
+        env:
+          SERVER_IP_ADDRESS: dev.moysklad.ru
+          APP_PREFIX: api-phone
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        run: |
+          ./build.sh
+          eval "$(ssh-agent -s)"
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          touch ~/.ssh/config && chmod 600 ~/.ssh/config
+          echo -e "Host ${SERVER_IP_ADDRESS}\n\tStrictHostKeyChecking no\nPort 22\n" >> ~/.ssh/config
+          ssh-add - <<< "$DEPLOY_KEY"
+          ssh app@${SERVER_IP_ADDRESS} pwd
+          rsync -r --delete-after --quiet output/ app@${SERVER_IP_ADDRESS}:./${APP_PREFIX}
