@@ -11,19 +11,3 @@ jobs:
       - name: Build
         run: |
           ./build.sh
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/MC-65688'
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Deploy
-        env:
-          SERVER_IP_ADDRESS: dev.moysklad.ru
-          APP_PREFIX: api-phone
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        run: |
-          ./build.sh
-          ls output
